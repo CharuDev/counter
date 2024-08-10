@@ -1,0 +1,112 @@
+/* Resetting default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centering the content on the page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Main container styling */
+#main {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Heading and count styling */
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 48px;
+    color: #333;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Decrease button styling */
+#decrease {
+    background-color: #ff4757;
+}
+
+#decrease:hover {
+    background-color: #e04050;
+}
+
+/* Reset button styling */
+#reset {
+    background-color: #ffa502;
+}
+
+#reset:hover {
+    background-color: #e69500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
